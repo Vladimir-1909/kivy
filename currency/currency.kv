@@ -1,0 +1,197 @@
+<CurButton@MDRectangleFlatButton>
+    font_size: '25sp'
+    md_bg_color: 17 / 226, 177 / 288, 94 / 225, 1
+    text_color: 1, 1, 1, 1
+
+<Container>:
+    rows: 2
+    text_label: text_label
+
+    AnchorLayout:
+        anchor_y: 'top'
+        size_hint: 1, 0.25
+        padding: 30
+
+        MDLabel:
+            text: ''
+            id: text_label
+            font_size: '45sp'
+            md_bg_color: 17 / 226, 177 / 288, 94 / 225, 1
+
+    GridLayout:
+        cols: 6
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            CurButton:
+                text: 'EUR'
+                size_hint: 1, 1
+                on_release:
+                    root.curs(self.text)
+
+
+            CurButton:
+                text: 'USD'
+                size_hint: 1, 1
+                on_release:
+                    root.curs(self.text)
+
+
+            CurButton:
+                text: 'GBP'
+                size_hint: 1, 1
+                on_release:
+                    root.curs(self.text)
+
+
+            CurButton:
+                text: 'CHF'
+                size_hint: 1, 1
+                on_release:
+                    root.curs(self.text)
+
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            CurButton:
+                text: 'RUB'
+                size_hint: 1, 1
+                on_release:
+                    root.curs(self.text)
+
+
+            CurButton:
+                text: 'KZT'
+                size_hint: 1, 1
+                on_release:
+                    root.curs(self.text)
+
+
+            CurButton:
+                text: 'JPY'
+                size_hint: 1, 1
+                on_release:
+                    root.curs(self.text)
+
+
+            CurButton:
+                text: 'RON'
+                size_hint: 1, 1
+                on_release:
+                    root.curs(self.text)
+
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            CurButton:
+                text: 'UAH'
+                size_hint: 1, 1
+                on_release:
+                    root.curs(self.text)
+
+
+            CurButton:
+                text: 'TRY'
+                size_hint: 1, 1
+                on_release:
+                    root.curs(self.text)
+
+
+            CurButton:
+                text: 'CNY'
+                size_hint: 1, 1
+                on_release:
+                    root.curs(self.text)
+
+
+            CurButton:
+                text: 'INR'
+                size_hint: 1, 1
+                on_release:
+                    root.curs(self.text)
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            CurButton:
+                text: '7'
+                size_hint: 1, 1
+                on_release:
+                    root.setNumber(self.text)
+
+            CurButton:
+                text: '4'
+                size_hint: 1, 1
+                on_release:
+                    root.setNumber(self.text)
+
+            CurButton:
+                text: '1'
+                size_hint: 1, 1
+                on_release:
+                    root.setNumber(self.text)
+
+            CurButton:
+                text: '0'
+                size_hint: 1, 1
+                on_release:
+                    root.setNumber(self.text)
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            CurButton:
+                text: '8'
+                size_hint: 1, 1
+                on_release:
+                    root.setNumber(self.text)
+
+            CurButton:
+                text: '5'
+                size_hint: 1, 1
+                on_release:
+                    root.setNumber(self.text)
+
+            CurButton:
+                text: '2'
+                size_hint: 1, 1
+                on_release:
+                    root.setNumber(self.text)
+
+            CurButton:
+                text: 'AC'
+                size_hint: 1, 1
+                on_release:
+                    root.clearAll()
+
+
+        BoxLayout:
+            orientation: 'vertical'
+
+            CurButton:
+                text: '9'
+                size_hint: 1, 1
+                on_release:
+                    root.setNumber(self.text)
+
+            CurButton:
+                text: '6'
+                size_hint: 1, 1
+                on_release:
+                    root.setNumber(self.text)
+
+
+            CurButton:
+                text: '3'
+                size_hint: 1, 1
+                on_release:
+                    root.setNumber(self.text)
+
+            CurButton:
+                text: 'AC'
+                size_hint: 1, 1
+                on_release:
+                    root.clearAll()
