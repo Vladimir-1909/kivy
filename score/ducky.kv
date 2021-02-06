@@ -1,0 +1,86 @@
+<MyOwnLabel@Label>
+    font_size: '25sp'
+    haling: 'left'
+    valing: 'middle'
+    text_size: self.size
+
+<Container>:
+    rows: 3
+    text_input: text_input
+    label_hours: label_hours
+    label_minutes: label_minutes
+    label_seconds: label_seconds
+    label_m_seconds: label_m_seconds
+    label_weeks: label_weeks
+
+
+
+    AnchorLayout:
+        anchor_y: 'top'
+        size_hint: 1, 0.14
+
+        TextInput:
+            text: ''
+            id: text_input
+            font_size: '45sp'
+            input_filter: 'int'
+            input_type: 'number'
+            multiline: False
+
+    GridLayout:
+        cols: 2
+        padding: [40, 0, 0, 0]
+
+        BoxLayout:
+            orientation: 'vertical'
+
+
+            MyOwnLabel:
+                text: 'Часы'
+
+            MyOwnLabel:
+                text: 'Минуты'
+
+            MyOwnLabel:
+                text: 'Секунды'
+
+            MyOwnLabel:
+                text: 'Милисекунды'
+
+            MyOwnLabel:
+                text: 'Недели'
+
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: 0.5, 1
+
+            MyOwnLabel:
+                text: '0'
+                id: label_hours
+
+            MyOwnLabel:
+                text: '0'
+                id: label_minutes
+
+            MyOwnLabel:
+                text: '0'
+                id: label_seconds
+
+            MyOwnLabel:
+                text: '0'
+                id: label_m_seconds
+
+            MyOwnLabel:
+                text: '0'
+                id: label_weeks
+
+
+    BoxLayout:
+        size_hint: 0.9, 0.2
+        padding: [30, 10, 10, 30]
+
+        Button:
+            text: 'Погнали!'
+            on_release:
+                root.convert()
