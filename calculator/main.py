@@ -28,11 +28,7 @@ class Container(GridLayout):
     def clearAll(self):
         self.text_label.text = ''
 
-    # функция подсчета
     def calculate(self, action):
-        # Здесь устанавливаем значение текстовой надписи в переменную first_number,
-        # при этом важно привести все в формат числа. Также устанавливаем
-        # действие в переменную и плюс очищаем текстовую надпись
         self.first_number = float(self.text_label.text)
         self.action = action
         self.text_label.text = ''
